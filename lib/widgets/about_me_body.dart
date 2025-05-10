@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navids_portfolio/widgets/skill_containers.dart';
 
 class AboutMeBodyText extends StatelessWidget {
   const AboutMeBodyText({super.key});
@@ -37,66 +38,16 @@ class AboutMeBodyText extends StatelessWidget {
                 mainAxisSpacing: 28,
               ),
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.surface,
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(
-                      color: Theme.of(context).colorScheme.outline,
-                    ),
-                  ),
-                  child: Center(
-                    child: Text(
-                      "Skill 1",
-                      style: Theme.of(context).textTheme.bodyMedium,
-                    ),
-                  ),
+                SkillContainers(
+                  skillDemo: "Flutter",
+                  iconData: Icons.flutter_dash,
                 ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.surface,
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(
-                      color: Theme.of(context).colorScheme.outline,
-                    ),
-                  ),
-                  child: Center(
-                    child: Text(
-                      "Skill 2",
-                      style: Theme.of(context).textTheme.bodyMedium,
-                    ),
-                  ),
+                SkillContainers(skillDemo: "Dart", iconData: Icons.code),
+                SkillContainers(
+                  skillDemo: "UI Design",
+                  iconData: Icons.design_services,
                 ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.surface,
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(
-                      color: Theme.of(context).colorScheme.outline,
-                    ),
-                  ),
-                  child: Center(
-                    child: Text(
-                      "Skill 2",
-                      style: Theme.of(context).textTheme.bodyMedium,
-                    ),
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.surface,
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(
-                      color: Theme.of(context).colorScheme.outline,
-                    ),
-                  ),
-                  child: Center(
-                    child: Text(
-                      "Skill 2",
-                      style: Theme.of(context).textTheme.bodyMedium,
-                    ),
-                  ),
-                ),
+                SkillContainers(skillDemo: "Firebase", iconData: Icons.cloud),
               ],
             ),
           ],
