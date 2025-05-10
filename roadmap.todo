@@ -1,0 +1,72 @@
+## Flutter Portfolio Web App Roadmap (`lib/`):
+
+1. Project Structure:
+    - [ ] Create folders:
+        - `lib/screens/` for each main page/section
+        - `lib/widgets/` for reusable UI components
+        - `lib/constants/` for colors, styles, etc.
+        - `lib/models/` for data models for projects, blogs, etc.
+        - `lib/assets/` for images, icons, etc.
+
+2. Main Entry & Routing:
+    - [ ] Update `main.dart` to use named routes or a navigation system for multi-page navigation.
+    - [ ] Set up a theme (dark mode, custom fonts, etc.) in `MaterialApp`.
+
+3. Screens:
+    - Home Page (`home_page.dart`):
+        - [ ] Build the main layout:
+            - Sidebar (profile, contact, social links)
+            - Main content area (About, What I’m Doing, etc.)
+        - [ ] Make the layout responsive for web.
+    - Other Screens:
+        - [ ] Create `about_screen.dart` for the About Me section.
+        - [ ] Create `resume_screen.dart` for Resume/Experience.
+        - [ ] Create `portfolio_screen.dart` for Projects.
+        - [ ] Create `blog_screen.dart` for Blog posts (optional).
+        - [ ] Create `contact_screen.dart` for Contact form/info.
+
+4. Widgets:
+    - [ ] `SidebarWidget` for profile, avatar, contact, social links.
+    - [ ] `NavBarWidget` for navigation tabs: About, Resume, Portfolio, Blog, Contact.
+    - [ ] `AboutWidget` for bio, intro.
+    - [ ] `ServiceCardWidget` for "What I’m Doing" cards.
+    - [ ] `ProjectCardWidget` for portfolio/projects.
+    - [ ] `ExperienceTimelineWidget` for resume/experience.
+    - [ ] `ContactFormWidget` for contact section.
+    - [ ] `SocialIconWidget` for social media links.
+
+5. Constants & Styles:
+    - [ ] Define color palette: dark background, accent colors.
+    - [ ] Define text styles: fonts, sizes, weights.
+    - [ ] Define padding, margin, and other layout constants.
+
+6. Assets:
+    - [ ] Add profile image/avatar.
+    - [ ] Add icons for services, social media, etc.
+    - [ ] Add project images/screenshots.
+
+7. Implement Features:
+    - [ ] Sidebar with profile, contact info, and social links.
+    - [ ] Navigation bar with active tab highlighting.
+    - [ ] About section with bio and intro.
+    - [ ] "What I’m Doing" section with service cards.
+    - [ ] Resume/Experience section (timeline or list).
+    - [ ] Portfolio section with project cards.
+    - [ ] Blog section (optional, list of posts).
+    - [ ] Contact section with form or contact details.
+
+8. Responsiveness & Polish:
+    - [ ] Ensure layout adapts to different screen sizes: desktop, tablet, mobile.
+    - [ ] Add hover effects and animations for interactivity.
+    - [ ] Test all navigation and links.
+
+9. (Optional) Data Models:
+    - [ ] Create models for projects, blog posts, etc., if loading from JSON or API.
+
+10. Testing:
+    - [ ] Test all widgets and screens for UI bugs.
+    - [ ] Test responsiveness and interactivity.
+
+Tip: Break each checkbox into smaller todos as you work. For each widget or screen, start with a basic layout, then add styling, then add interactivity.
+
+Let me know if you want a sample file/folder structure or code snippets for any of these steps.
