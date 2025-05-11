@@ -6,8 +6,9 @@ class AboutMeBodyText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(16),
+    return SingleChildScrollView(
+      // 🔥 Added vertical scroll
+      physics: const AlwaysScrollableScrollPhysics(),
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -49,6 +50,50 @@ class AboutMeBodyText extends StatelessWidget {
                 ),
                 SkillContainers(skillDemo: "Firebase", iconData: Icons.cloud),
               ],
+            ),
+            SizedBox(height: 20),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              padding: EdgeInsets.all(16),
+              child: Row(
+                children: [
+                  Icon(Icons.home, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.search, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.settings, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.star, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.favorite, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.home, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.search, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.settings, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.star, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.favorite, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.settings, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.star, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.favorite, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.home, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.search, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.settings, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.star, size: 60),
+                  SizedBox(width: 30),
+                  Icon(Icons.favorite, size: 60),
+                ],
+              ),
             ),
           ],
         ),
