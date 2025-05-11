@@ -21,6 +21,7 @@ class SkillContainers extends StatelessWidget {
         border: Border.all(color: Theme.of(context).colorScheme.outline),
       ),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Icon(iconData, color: Theme.of(context).colorScheme.surface),
           Column(

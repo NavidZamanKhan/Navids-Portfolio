@@ -54,60 +54,71 @@ class BoxContainers extends StatelessWidget {
             Expanded(
               child: Padding(
                 padding: EdgeInsets.all(16),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.onSurface,
-                    borderRadius: BorderRadius.circular(16),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black26,
-                        offset: Offset(0, 4),
-                        blurRadius: 4,
-                      ),
-                    ],
-                  ),
-                  child: Column(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Theme.of(context).colorScheme.onSurface,
-                          borderRadius: BorderRadius.vertical(
-                            top: Radius.circular(16),
+                child: SingleChildScrollView(
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(
+                      minHeight: MediaQuery.of(context).size.height,
+                    ),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.onSurface,
+                        borderRadius: BorderRadius.circular(16),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black26,
+                            offset: Offset(0, 4),
+                            blurRadius: 4,
                           ),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black26,
-                              offset: Offset(0, 4),
-                              blurRadius: 4,
+                        ],
+                      ),
+                      child: Column(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Theme.of(context).colorScheme.onSurface,
+                              borderRadius: BorderRadius.vertical(
+                                top: Radius.circular(16),
+                              ),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black26,
+                                  offset: Offset(0, 4),
+                                  blurRadius: 4,
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
-                        child: AppBar(
-                          backgroundColor: Colors.transparent,
-                          elevation: 0,
-                          title: Text(
-                            "About Me",
-                            style: Theme.of(
-                              context,
-                            ).textTheme.titleLarge!.copyWith(
-                              color: Theme.of(context).colorScheme.surface,
-                              fontWeight: FontWeight.w900,
+                            child: AppBar(
+                              backgroundColor: Colors.transparent,
+                              elevation: 0,
+                              title: Text(
+                                "About Me",
+                                style: Theme.of(
+                                  context,
+                                ).textTheme.titleLarge!.copyWith(
+                                  color: Theme.of(context).colorScheme.surface,
+                                  fontWeight: FontWeight.w900,
+                                ),
+                              ),
+                              actions: [
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text("About"),
+                                ),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text("Resume"),
+                                ),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text("projects"),
+                                ),
+                              ],
                             ),
                           ),
-                          actions: [
-                            TextButton(onPressed: () {}, child: Text("About")),
-                            TextButton(onPressed: () {}, child: Text("Resume")),
-                            TextButton(
-                              onPressed: () {},
-                              child: Text("projects"),
-                            ),
-                          ],
-                        ),
+                          AboutMeBodyText(),
+                        ],
                       ),
-                      Expanded(
-                        child: SingleChildScrollView(child: AboutMeBodyText()),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
               ),
